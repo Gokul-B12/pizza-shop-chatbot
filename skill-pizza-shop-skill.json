@@ -1,0 +1,1279 @@
+{
+  "intents": [
+    {
+      "intent": "gudbyes",
+      "examples": [
+        {
+          "text": "Talk to u soon"
+        },
+        {
+          "text": "Good bye"
+        },
+        {
+          "text": "C u"
+        },
+        {
+          "text": "See u Soon"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "true",
+      "examples": [
+        {
+          "text": "yeah"
+        },
+        {
+          "text": "of course"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hours_info",
+      "examples": [
+        {
+          "text": "what are the hours of operation for your kolkata store"
+        },
+        {
+          "text": "what are you hours of operation in mumbai"
+        },
+        {
+          "text": "Are you open on Sundays?"
+        },
+        {
+          "text": "What are your hours?"
+        },
+        {
+          "text": "What time are you open until?"
+        },
+        {
+          "text": "What are your hours of operation?"
+        },
+        {
+          "text": "When do you open"
+        },
+        {
+          "text": "When are you open"
+        },
+        {
+          "text": "What days are you closed on?"
+        },
+        {
+          "text": "When do you close"
+        },
+        {
+          "text": "Are you open on Christmas' Day?"
+        },
+        {
+          "text": "Are you open on Saturdays?"
+        }
+      ]
+    },
+    {
+      "intent": "false",
+      "examples": [
+        {
+          "text": "done"
+        },
+        {
+          "text": "no"
+        },
+        {
+          "text": "im done"
+        },
+        {
+          "text": "over"
+        },
+        {
+          "text": "thats it"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order",
+      "examples": [
+        {
+          "text": "i want to oder pizza"
+        },
+        {
+          "text": "im hungry"
+        },
+        {
+          "text": "i need pizza"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "kia kora"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": "welcome note"
+    },
+    {
+      "intent": "location_info",
+      "examples": [
+        {
+          "text": "Give me a list of locations"
+        },
+        {
+          "text": "List of location"
+        },
+        {
+          "text": "What are your locations?"
+        },
+        {
+          "text": "Where are you physically located?"
+        },
+        {
+          "text": "Where are your stores?"
+        },
+        {
+          "text": "list of your locations"
+        },
+        {
+          "text": "What's the address of your mumbai store?"
+        },
+        {
+          "text": "do you have a flower shop in kolkata?"
+        },
+        {
+          "text": "where is your mumbai store?"
+        },
+        {
+          "text": "what's the address of your chennai store?"
+        },
+        {
+          "text": "locations in America"
+        },
+        {
+          "text": "Locations in india"
+        }
+      ]
+    },
+    {
+      "intent": "thankyou",
+      "examples": [
+        {
+          "text": "Thank You"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "appreciate it"
+        },
+        {
+          "text": "thanx"
+        },
+        {
+          "text": "cheers"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "size",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "large",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "regular",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medium",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "other_locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "punjab",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bangalore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "gujarat",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "mumbai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chennai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "kolkata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "delhi",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "toppings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "corn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "olives",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "paneer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "onions",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "customize",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "toppings",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cheese",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pizza",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "YOYO special pizzza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mushroom pizza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chicken pizza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "veg pizza",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "enters adresss",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "thank you and your order has been placed & ur order refrence number is **********. "
+              },
+              {
+                "text": "Keep this reference number for future purpose."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595348328837",
+      "conditions": "true",
+      "dialog_node": "node_8_1595348376643"
+    },
+    {
+      "type": "standard",
+      "title": "size of pizza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "sure , do u want to customize ur pizza?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_9_1595345434449",
+      "conditions": "@size",
+      "dialog_node": "node_4_1595345816693"
+    },
+    {
+      "type": "standard",
+      "title": "enters name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your contact number please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1595348211649",
+      "conditions": "true",
+      "dialog_node": "node_6_1595348290881"
+    },
+    {
+      "type": "standard",
+      "title": "Thankyou",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome. Please let me know if you need anything else."
+              },
+              {
+                "text": "My pleasure."
+              },
+              {
+                "text": "No problem. Let me know if there is anything else I can help with."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1595309274692",
+      "conditions": "#thankyou",
+      "dialog_node": "node_7_1595309766852",
+      "previous_sibling": "node_6_1595309360205"
+    },
+    {
+      "type": "standard",
+      "title": "Good bye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice talking to you today."
+              },
+              {
+                "text": "Have a nice day."
+              },
+              {
+                "text": "Goodbye."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1595309274692",
+      "conditions": "#gudbyes",
+      "dialog_node": "node_4_1595309895113",
+      "previous_sibling": "node_7_1595309766852"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there. How can I help you?"
+              },
+              {
+                "text": "Hello. How may I assist you today?"
+              },
+              {
+                "text": "Hi. What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1595309274692",
+      "conditions": "#greetings",
+      "dialog_node": "node_6_1595309360205"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your name please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595348150488",
+      "conditions": "#true",
+      "dialog_node": "node_6_1595348211649"
+    },
+    {
+      "type": "standard",
+      "title": "enters name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your contact number please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1595348714339",
+      "conditions": "true",
+      "dialog_node": "node_3_1595348714339"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our mumbai store is located at 123 Warden Avenue."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1595322340425",
+      "conditions": "@location:mumbai",
+      "dialog_node": "response_5_1595322340425",
+      "previous_sibling": "response_4_1595322340425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our chennai store is located at 123 Warden Avenue."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1595322340425",
+      "conditions": "@location:chennai",
+      "dialog_node": "response_4_1595322340425",
+      "previous_sibling": "response_3_1595322340425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our delhi store is located at 123 Warden Avenue."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1595322340425",
+      "conditions": "@location:delhi",
+      "dialog_node": "response_6_1595322340425",
+      "previous_sibling": "response_5_1595322340425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our kolkata store is located at 123 Warden Avenue."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1595322340425",
+      "conditions": "@location:kolkata",
+      "dialog_node": "response_3_1595322340425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "ok sure... select done once you are done",
+            "options": [
+              {
+                "label": "Done",
+                "value": {
+                  "input": {
+                    "text": "Done"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1595347625072",
+      "conditions": "@customize:cheese",
+      "dialog_node": "response_5_1595347825777",
+      "previous_sibling": "response_1_1595347673810"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "choose any one",
+            "options": [
+              {
+                "label": "paneer",
+                "value": {
+                  "input": {
+                    "text": "paneer"
+                  }
+                }
+              },
+              {
+                "label": "onion",
+                "value": {
+                  "input": {
+                    "text": "onion"
+                  }
+                }
+              },
+              {
+                "label": "olives",
+                "value": {
+                  "input": {
+                    "text": "olives"
+                  }
+                }
+              },
+              {
+                "label": "corn",
+                "value": {
+                  "input": {
+                    "text": "corn"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1595347625072",
+      "conditions": "@customize:toppings",
+      "dialog_node": "response_1_1595347673810",
+      "previous_sibling": "node_1_1595347471858"
+    },
+    {
+      "type": "standard",
+      "title": "if no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1595347625072",
+      "conditions": "#false",
+      "dialog_node": "node_1_1595347471858",
+      "previous_sibling": "node_10_1595348610577"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1595347625072",
+      "conditions": "@toppings",
+      "dialog_node": "node_10_1595348610577"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ok.......shall i take the order?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595347471858",
+      "conditions": "#false",
+      "dialog_node": "node_5_1595348150488"
+    },
+    {
+      "type": "standard",
+      "title": "enters adresss",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "thank you....... your order reerence number is **********."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1595348714339",
+      "conditions": "true",
+      "dialog_node": "node_5_1595348714339"
+    },
+    {
+      "type": "standard",
+      "title": "location not provided",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our store locations are listed on our site on the <a href=\"https://example.org/stores\">stores page</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595322340418",
+      "conditions": "true",
+      "dialog_node": "node_10_1595322766983",
+      "previous_sibling": "node_7_1595322340425"
+    },
+    {
+      "type": "standard",
+      "title": "other locations",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we don’t have a store in @other_locations. To date, we have stores in Chennai, Mumbai,Delhi,Kolkata."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595322340418",
+      "conditions": "@other_locations",
+      "dialog_node": "node_7_1595322340425",
+      "previous_sibling": "node_2_1595322340425"
+    },
+    {
+      "type": "standard",
+      "title": "our location",
+      "output": {},
+      "parent": "node_1_1595322340418",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@location",
+      "dialog_node": "node_2_1595322340425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "opens on weekends from 9 am until 11 pm,"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595321589572",
+      "conditions": "@location:delhi",
+      "dialog_node": "response_5_1595321798815",
+      "previous_sibling": "response_7_1595321776554"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "opens on monday,wednesday and sunday"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595321589572",
+      "conditions": "@location:chennai",
+      "dialog_node": "response_5_1595321742449",
+      "previous_sibling": "response_5_1595321676241"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "only in sundaysfrom 9 am until 11 pm,"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595321589572",
+      "conditions": "@location:mumbai",
+      "dialog_node": "response_7_1595321776554",
+      "previous_sibling": "response_5_1595321742449"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "monday to friday from 9 am until 6 pm,"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595321589572",
+      "conditions": "@location:kolkata",
+      "dialog_node": "response_5_1595321676241"
+    },
+    {
+      "type": "standard",
+      "title": "location not provided",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our hours of operations are listed on <a href=\"https://example.org/hours/\">our Hours page</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595321061268",
+      "conditions": "true",
+      "dialog_node": "node_3_1595322830154",
+      "previous_sibling": "node_2_1595322001263"
+    },
+    {
+      "type": "standard",
+      "title": "other locations",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we don’t have a store in @other_locations. To date, we have stores in Chennai, Mumbai,Delhi,Kolkata."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595321061268",
+      "conditions": "@other_locations",
+      "dialog_node": "node_2_1595322001263",
+      "previous_sibling": "node_8_1595321589572"
+    },
+    {
+      "type": "standard",
+      "title": "our location",
+      "parent": "node_1_1595321061268",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@location",
+      "dialog_node": "node_8_1595321589572"
+    },
+    {
+      "type": "standard",
+      "title": "enter number",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "can u please give me your address?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1595348290881",
+      "conditions": "@sys-number",
+      "dialog_node": "node_8_1595348328837"
+    },
+    {
+      "type": "standard",
+      "title": "enter number",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "can u please give me your address?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1595348714339",
+      "conditions": "@sys-number",
+      "dialog_node": "node_4_1595348714339"
+    },
+    {
+      "type": "standard",
+      "title": "if yes",
+      "output": {
+        "generic": [
+          {
+            "title": "Cool, What do u want to change?",
+            "options": [
+              {
+                "label": "toppings",
+                "value": {
+                  "input": {
+                    "text": "Toppings"
+                  }
+                }
+              },
+              {
+                "label": "cheese",
+                "value": {
+                  "input": {
+                    "text": "cheese"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1595345816693",
+      "conditions": "#true",
+      "dialog_node": "node_10_1595346458563"
+    },
+    {
+      "type": "standard",
+      "title": "no - copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ok.......shall i take the order?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1595348610577",
+      "conditions": "#false",
+      "dialog_node": "node_1_1595348714334"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your name please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595348714334",
+      "conditions": "#true",
+      "dialog_node": "node_2_1595348714339"
+    },
+    {
+      "type": "standard",
+      "title": "pizza we have",
+      "output": {
+        "generic": [
+          {
+            "title": "how large?",
+            "options": [
+              {
+                "label": "regular",
+                "value": {
+                  "input": {
+                    "text": "regular"
+                  }
+                }
+              },
+              {
+                "label": "medium",
+                "value": {
+                  "input": {
+                    "text": "medium"
+                  }
+                }
+              },
+              {
+                "label": "large",
+                "value": {
+                  "input": {
+                    "text": "large"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1595344869657",
+      "conditions": "@pizza",
+      "dialog_node": "node_9_1595345434449"
+    },
+    {
+      "type": "standard",
+      "title": "customize",
+      "parent": "node_10_1595346458563",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@customize",
+      "dialog_node": "node_3_1595347625072"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "It looks like we are not quite getting each other today. Would you like to talk to a human agent instead? If so, please contact us at 1234956870 or email us at support@yoyopizza.in"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1595309274692",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "folder",
+      "title": "chitchats",
+      "dialog_node": "node_3_1595309274692",
+      "previous_sibling": "node_1_1595322340418"
+    },
+    {
+      "type": "standard",
+      "title": "location info",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#location_info",
+      "dialog_node": "node_1_1595322340418",
+      "previous_sibling": "node_1_1595321061268"
+    },
+    {
+      "type": "standard",
+      "title": "hours of operation",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#hours_info",
+      "dialog_node": "node_1_1595321061268",
+      "previous_sibling": "node_1_1595344869657"
+    },
+    {
+      "type": "standard",
+      "title": "ordering pizza",
+      "output": {
+        "generic": [
+          {
+            "title": "what kind of pizza do you want?",
+            "options": [
+              {
+                "label": "veg pizza",
+                "value": {
+                  "input": {
+                    "text": "veg pizza"
+                  }
+                }
+              },
+              {
+                "label": "chicken pizza",
+                "value": {
+                  "input": {
+                    "text": "chicken pizza"
+                  }
+                }
+              },
+              {
+                "label": "YOYO special pizza",
+                "value": {
+                  "input": {
+                    "text": "YOYO special pizza"
+                  }
+                }
+              }
+            ],
+            "description": "As of now we have only these pizza's.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#order",
+      "dialog_node": "node_1_1595344869657",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. My name is YOYO and I'm a chatbot here to assist you with your questions about store hours, locations,dishes as well as I will take your orders."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "pizza shop skill",
+  "language": "en",
+  "description": ""
+}
